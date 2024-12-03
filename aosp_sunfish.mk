@@ -46,6 +46,12 @@ $(call inherit-product, device/google/sunfish/device-sunfish.mk)
 $(call inherit-product-if-exists, vendor/google_devices/sunfish/proprietary/device-vendor.mk)
 $(call inherit-product-if-exists, vendor/google_devices/sunfish/prebuilts/device-vendor-sunfish.mk)
 
+# Set Boot Animination Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Include GAPPS
+WITH_GAPPS := true
+
 # Don't build super.img.
 PRODUCT_BUILD_SUPER_PARTITION := false
 
@@ -54,6 +60,6 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 
 PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := Android
-PRODUCT_NAME := aosp_sunfish
+PRODUCT_NAME := p404_sunfish
 PRODUCT_DEVICE := sunfish
-PRODUCT_MODEL := AOSP on sunfish
+PRODUCT_MODEL := P404 on sunfish
